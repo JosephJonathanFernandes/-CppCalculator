@@ -21,6 +21,53 @@ A simple yet powerful **command-line calculator** written in C++ that supports:
 
 ---
 
+## 💡 Usage
+
+
+g++ smart_calculator.cpp -o calculator
+
+./calculator
+
+📝 Sample Input
+
+====== Virtual Calculator ======
+
+Supported operations:
+
+  + (Addition)
+  + 
+  - (Subtraction)
+  - 
+  * (Multiplication)
+  * 
+  / (Division)
+
+  % (Modulus - integer only)
+  
+  ^ (Exponentiation)
+  
+Instructions:
+
+  - Enter two numbers and an operator.
+  - 
+  - You can enter 'ans' instead of the first number to reuse the last result.
+
+1. Perform Calculation
+   
+2. View History
+   
+3. Exit
+   
+Enter choice: 1
+
+Enter first number (or 'ans'): ans
+
+Enter operator (+, -, *, /, %, ^): *
+
+Enter second number: 5
+
+Result: 25
+
 📂 Files
 
 smart_calculator.cpp – Main source file
@@ -38,5 +85,6 @@ Joseph Fernandes
 Feel free to fork or improve this project!
 
 🔗 License
+
 MIT License 
 
