@@ -1,13 +1,15 @@
-# Smart Calculator (Learning Project)
+# 🧮 C++ CLI Calculator
 
-Small C++ calculator program intended for learning and demonstration purposes. The project contains a simple CLI calculator that supports + - * / % ^ and persists a short history to `data/calc_history.txt` (ignored by version control).
+A simple yet powerful **command-line calculator** written in C++ that supports:
 
-Key points:
-- Modernized C++17 code for clarity and safety.
-- Local history saved under `data/` (not checked into Git).
-- CI builds via GitHub Actions (see `.github/workflows/ci.yml`).
+- Basic arithmetic: `+`, `-`, `*`, `/`
+- Modulus: `%` (integer only)
+- Exponentiation: `^`
+- History tracking of up to 100 calculations
+- Reuse of previous result using `ans`
+- Persistent history saved to a text file
 
-Build (Linux/macOS) with CMake:
+---
 
 ```bash
 mkdir -p build && cd build
@@ -26,8 +28,13 @@ Highlights
 - CMake-based build for standard development workflows.
 
 Quick start — build with CMake (recommended)
+## 📦 Features
 
-On Windows (PowerShell):
+- Perform calculations with two numbers and an operator
+- Use `ans` to reference the result of the last calculation
+- View past calculations at any time
+- Saves calculation history to `calc_history.txt` automatically
+- Input validation to handle bad data and divide-by-zero
 
 ```powershell
 mkdir build
@@ -69,4 +76,5 @@ Contributing & Code of Conduct
 License
 - MIT — see `LICENSE`.
 
-If you'd like I can add a CI badge, code coverage badge, or an example walkthrough. Pull requests should target `main` and the branch naming convention is `feature/` or `chore/` for non-feature work.
+
+
