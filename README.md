@@ -1,25 +1,90 @@
-# Smart Calculator (Learning Project)
+# 🧮 C++ CLI Calculator
 
-Small C++ calculator program intended for learning and demonstration purposes. The project contains a simple CLI calculator that supports + - * / % ^ and persists a short history to `data/calc_history.txt` (ignored by version control).
+A simple yet powerful **command-line calculator** written in C++ that supports:
 
-Key points:
-- Modernized C++17 code for clarity and safety.
-- Local history saved under `data/` (not checked into Git).
-- CI builds via GitHub Actions (see `.github/workflows/ci.yml`).
+- Basic arithmetic: `+`, `-`, `*`, `/`
+- Modulus: `%` (integer only)
+- Exponentiation: `^`
+- History tracking of up to 100 calculations
+- Reuse of previous result using `ans`
+- Persistent history saved to a text file
 
-Build (Linux/macOS) with CMake:
+---
 
-```bash
-mkdir -p build && cd build
-cmake ..
-cmake --build . --config Release
-./smart_calculator
-```
+## 📦 Features
 
-On Windows (PowerShell):
+- Perform calculations with two numbers and an operator
+- Use `ans` to reference the result of the last calculation
+- View past calculations at any time
+- Saves calculation history to `calc_history.txt` automatically
+- Input validation to handle bad data and divide-by-zero
 
-```powershell
-mkdir build; cd build; cmake ..; cmake --build . --config Release; .\Release\smart_calculator.exe
-```
+---
 
-This repository is marked as a learning project. Contributions welcome — see `CONTRIBUTING.md`.
+## 💡 Usage
+
+
+g++ smart_calculator.cpp -o calculator
+
+./calculator
+
+📝 Sample Input
+
+====== Virtual Calculator ======
+
+Supported operations:
+
+  + (Addition)
+  + 
+  - (Subtraction)
+  - 
+  * (Multiplication)
+  * 
+  / (Division)
+
+  % (Modulus - integer only)
+  
+  ^ (Exponentiation)
+  
+Instructions:
+
+  - Enter two numbers and an operator.
+  - 
+  - You can enter 'ans' instead of the first number to reuse the last result.
+
+1. Perform Calculation
+   
+2. View History
+   
+3. Exit
+   
+Enter choice: 1
+
+Enter first number (or 'ans'): ans
+
+Enter operator (+, -, *, /, %, ^): *
+
+Enter second number: 5
+
+Result: 25
+
+📂 Files
+
+smart_calculator.cpp – Main source file
+
+calc_history.txt – Automatically created; stores past calculations
+
+.gitignore – Ignores build files and editor clutter
+
+README.md – Project documentation
+
+👨‍💻 Author
+
+Joseph Fernandes
+
+Feel free to fork or improve this project!
+
+🔗 License
+
+MIT License 
+
